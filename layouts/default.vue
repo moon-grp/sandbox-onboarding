@@ -8,8 +8,8 @@
       app
     >
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app flat color="#FFFFFF">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+    <v-app-bar :clipped-left="clipped" fixed app flat color="blue">
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"  class="hidden-md-and-up"/>
        <v-toolbar-title>
           <v-img  src="/logo.svg" height="50px" width="120px">
           </v-img>
@@ -19,7 +19,7 @@
         
         <v-spacer />
         <hr>
-            <v-icon class="mr-3" large color="green darken-2">mdi-magnify</v-icon>
+            <v-icon class="mr-3"  color="green darken-2">mdi-magnify</v-icon>
                <v-btn
         depressed
         >
@@ -29,13 +29,14 @@
           overlap
         >
      
-          <v-icon  large color="green darken-2">mdi-email-outline</v-icon>
+          <v-icon  color="green darken-2">mdi-email-outline</v-icon>
           </v-badge>
           Messages
         </v-btn>
 
                   <v-btn
-        depressed
+        flat
+       class="hidden-sm-and-down mr-5 ml-5"
         >
              <v-badge
           color="#007BFF"
@@ -43,7 +44,7 @@
           overlap
         >
      
-          <v-icon class="mr-3" large color="green darken-2">mdi-cart-outline</v-icon>
+          <v-icon class="mr-3"  color="green darken-2">mdi-cart-outline</v-icon>
           </v-badge>
           Market place
         </v-btn>
@@ -57,7 +58,7 @@
           overlap
         >
      
-          <v-icon class="mr-3" large color="green darken-2">mdi-menu</v-icon>
+          <v-icon class="mr-3"  color="green darken-2">mdi-menu</v-icon>
           </v-badge>
           Notifications
         </v-btn>
