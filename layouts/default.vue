@@ -8,7 +8,7 @@
       app
     >
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app flat color="blue">
+    <v-app-bar :clipped-left="clipped" fixed app flat color="FFFFFF">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"  class="hidden-md-and-up"/>
        <v-toolbar-title>
           <v-img  src="/logo.svg" height="50px" width="120px">
@@ -21,7 +21,7 @@
         <hr>
             <v-icon class="mr-3"  color="green darken-2">mdi-magnify</v-icon>
                <v-btn
-        depressed
+        text
         >
              <v-badge
           color="#007BFF"
@@ -35,7 +35,7 @@
         </v-btn>
 
                   <v-btn
-        flat
+        text
        class="hidden-sm-and-down mr-5 ml-5"
         >
              <v-badge
@@ -50,7 +50,7 @@
         </v-btn>
 
            <v-btn
-        depressed
+        text
         >
              <v-badge
           color="#007BFF"
