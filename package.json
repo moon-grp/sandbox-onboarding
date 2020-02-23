@@ -13,9 +13,11 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "nuxt": "^2.0.0",
+    "vue2-google-maps": "^0.10.7",
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/vuetify": "^1.0.0"
   }
 }

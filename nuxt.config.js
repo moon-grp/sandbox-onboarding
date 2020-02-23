@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    "@/plugins/map"
   ],
   /*
   ** Nuxt.js dev-modules
@@ -43,6 +44,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    "@nuxtjs/dotenv"
   ],
   /*
   ** Axios module configuration
@@ -70,6 +72,9 @@ export default {
         }
       }
     }
+  },
+  env:{
+    MAP_API_KEY: process.env.MAP_API_KEY
   },
   /*
   ** Build configuration
