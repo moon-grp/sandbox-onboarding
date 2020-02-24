@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Google Maps Demo</h1>
+    <h1>Google Maps Demo branch v2.0</h1>
 
     <gmap-map :center="center" :map-type-id="mapTypeId" :zoom="5">
       <gmap-marker
